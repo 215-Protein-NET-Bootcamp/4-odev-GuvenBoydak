@@ -7,6 +7,5 @@ namespace JwtHomework.Business
         Task<IEnumerable<Person>> GetByAccountIdAsync(int id);
 
         Task<List<Person>> GetPaginationAsync(int page, int limit,string cacheKey);
-
     }
 }

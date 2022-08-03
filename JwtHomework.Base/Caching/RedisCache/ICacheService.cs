@@ -9,5 +9,6 @@ namespace JwtHomework.Base
         Task SetAsync(string cacheKey,object entity,int expirationDay);
 
         Task RemoveAsync(string cacheKey);
+
     }
 }

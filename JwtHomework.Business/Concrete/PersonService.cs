@@ -66,7 +66,6 @@ namespace JwtHomework.Business
                 return people;
             }         
             return people;
-
         }
 
         public async Task InsertAsync(Person entity)

@@ -7,7 +7,6 @@ namespace JwtHomework.Base
     {
         private readonly IMemoryCache _memoryCache;
 
-
         public InMemoryCacheService(IMemoryCache memoryCache)
         {
             _memoryCache = memoryCache;

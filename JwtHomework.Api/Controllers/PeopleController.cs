@@ -10,7 +10,7 @@ namespace JwtHomework.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class PeopleController : CustomBaseController
     {
         private readonly IPersonService _personService;
@@ -27,6 +27,7 @@ namespace JwtHomework.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllWithPagination([FromQuery] int page,[FromQuery] int limit, [FromQuery] string cacheKey)
         {
+            //Pagination işlemi 
             List<Person> people = await _personService.GetPaginationAsync(page,limit,cacheKey);
 
             List<PersonListDto> peopleListDto = _mapper.Map<List<PersonListDto>>(people);

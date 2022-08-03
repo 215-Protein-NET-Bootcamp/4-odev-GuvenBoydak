@@ -79,7 +79,7 @@ namespace JwtHomework.DataAccess
         {
             using (IDbConnection con = _db.CreateConnection())
             {
-                IEnumerable<Person> people = await con.QueryAsync<Person>("select * from \"People\" order by \"Id\"  limit  @limit offset  @page",
+                IEnumerable<Person> people = await con.QueryAsync<Person>("select * from \"People\" where \"Status\" != '2' order by \"Id\"  limit  @limit offset  @page",
                     new
                     {
                         limit = limit,

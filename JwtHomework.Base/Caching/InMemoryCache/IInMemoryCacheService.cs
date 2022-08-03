@@ -11,7 +11,6 @@ namespace JwtHomework.Base
 
             void Remove(string cacheKey);
 
-            bool TryGetValue(string cacheKey, out List<T> entity);
-        
+            bool TryGetValue(string cacheKey, out List<T> entity);   
     }
 }

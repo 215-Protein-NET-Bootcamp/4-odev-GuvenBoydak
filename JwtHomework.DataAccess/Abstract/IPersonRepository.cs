@@ -8,5 +8,6 @@ namespace JwtHomework.DataAccess
         Task<IEnumerable<Person>> GetByAccountIdAsync(int id);
 
         Task<List<Person>> GetPaginationAsync(int page, int limit);
+
     }
 }
