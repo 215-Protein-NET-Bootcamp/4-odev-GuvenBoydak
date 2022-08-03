@@ -10,7 +10,7 @@ namespace JwtHomework.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class PeopleController : CustomBaseController
     {
         private readonly IPersonService _personService;
