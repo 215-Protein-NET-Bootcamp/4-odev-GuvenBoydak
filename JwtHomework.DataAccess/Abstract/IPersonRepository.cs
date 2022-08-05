@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace JwtHomework.DataAccess
 {
-    public interface IPersonRepository:IRepository<Person>
+    public interface IPersonRepository
     {
-        Task<IEnumerable<Person>> GetByAccountIdAsync(int id);
-
         Task<List<Person>> GetPaginationAsync(int page, int limit);
 
     }

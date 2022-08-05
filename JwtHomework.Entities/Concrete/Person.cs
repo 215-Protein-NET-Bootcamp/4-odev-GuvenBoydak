@@ -14,9 +14,7 @@
 
         public DateTime DateOfBirth { get; set; }
 
-        public int AccountId { get; set; }
 
-        //Relational Property
-        public Account Account { get; set; }
+
     }
 }
